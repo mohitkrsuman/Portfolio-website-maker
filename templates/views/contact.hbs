@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Mokrus | Portfolio</title>
+</head>
+<body>
+   <div id="top-image">
+    <div class="main-container">
+      {{>static}}
+         <div class="contact-container">
+           <div class="contact-containerA">
+             <div class="contact-text"> <span class="contactspan">Cont</span><span class="contactspanB">act</span></div>
+             <div class="contact-content">
+                <div class="contact-contentA">
+                     <div class="location contact_card"><i class="fas fa-map-marker-alt"></i><p>Bhopal</p></div>
+                     <div class="email contact_card"><i class="fas fa-envelope-open-text"></i><p>workwith mokrus@gmail.com</p></div>
+                     <div class="fiverr contact_card"><i class="far fa-user-circle"></i><p>mohitkrsuman</p></div>
+                     <div class="freelance contact_card"><i class="far fa-check-circle"></i><p>Freelance Availiable</p></div>
+                </div>
+                <div class="contact-contentB">
+                     <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234700.85820778937!2d77.26580536426648!3d23.199347693033406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c428f8fd68fbd%3A0x2155716d572d4f8!2sBhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1623589609248!5m2!1sen!2sin" allowfullscreen="" loading="fast"></iframe>
+                     </div>
+                     <div class="form_text"><span class="formspan">How Can I </span> <span class="formspanB">Help You?</span></div>
+                     <div class="contactform">
+                        <form action="/contact" method="POST">
+                           <div class="inputs">
+                              <input type="text" id="name" class="input_area" placeholder="Full Name*" name="name" required>
+                              <input type="text" id="email" class="input_area" placeholder="Email Address*" name="email" required>
+                              <input type="text" id="subject" class="input_area" placeholder="Subject*" name="subject">
+                           </div>
+                           <div class="message">
+                              <textarea name="message" id="" cols="30" rows="10"></textarea>
+                           </div>
+                           <input id="formsubmit" type="submit">
+                        </form>
+                     </div>
+                </div>
+            </div>
+         </div>  
+
+       </div>
+    </div>
+     {{>menu}}
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   </script>
+   <script src="./js/script.js"></script>
+</body>
+</html>

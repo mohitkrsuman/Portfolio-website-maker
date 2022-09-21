@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Mokrus | Portfolio</title>
+</head>
+<body>
+   <div id="top-image">
+    <div class="main-container">
+      {{>static}}
+       <div class="blog-container">
+           <div class="blog-containerA">
+             <div class="blog-text"> <span class="blogspan">Blo</span><span class="blogspanB">gs</span></div>
+            
+             <div class="blogmain-content">
+                {{!*******************Blog Post 1*************************}}
+               <div class="blog-post">
+                  <div class="blog-post_img">
+                     <img src="images/blogA.png" alt="web dev">
+                     <div class="blogOverlay"><span>Author: </span>Mohit kr Suman</div>
+                  </div>
+                  <div class="blog-post_info">
+                     <div class="blog-post_date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Saturday</span>
+                        <span> June 12 2021</span>
+                     </div>
+                     <h1 class="blog-post_title">Web Dev Roadmap</h1>
+                     <p class="blog-post_text">
+                       Learn Web development in most effective way with me, To get most out of it.<span id="dots">...</span><span id="more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolores optio nesciunt rerum accusantium laboriosam velit ducimus qui, nostrum quia consectetur libero totam reprehenderit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur saepe accusantium mollitia omnis inventore. Odit, pariatur, quaerat accusantium quae id voluptatibus distinctio excepturi saepe numquam ut animi magni autem doloremque nesciunt dolorum et veritatis sunt dolore qui itaque. Quos, eligendi. Perspiciatis placeat soluta, excepturi blanditiis fuga eius dicta adipisci tenetur nam exercitationem cum itaque natus, magnam, deleniti totam quae vitae nostrum iste asperiores velit. Neque perspiciatis consectetur voluptatem laborum et non vero rem autem sint. Voluptatibus, maxime hic! Numquam omnis minus harum ipsa consectetur maiores illo in dolor voluptates. Corrupti possimus libero in, soluta quis pariatur ullam iste earum architecto.</span></p>
+                     <a href="#" id="blog-post_cta" onclick="readMore()">Read More</a>
+                  </div>
+               </div>
+               {{! BLog post 1 ends}}
+             </div>
+
+           </div> 
+       </div>
+    </div>
+     {{>menu}}
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   </script>
+   <script src="./js/script.js"></script>
+</body>
+</html>
